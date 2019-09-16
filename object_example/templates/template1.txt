@@ -1,0 +1,1 @@
+You wrote: {{ .template_1_string }}
