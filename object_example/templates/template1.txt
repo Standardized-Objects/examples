@@ -1,1 +1,1 @@
-You wrote: {{ .template_1_string }}
+You wrote: {{ .template1_string }}
