@@ -1,6 +1,0 @@
-values:
-  - tag: template1_string
-    description: "Wrote something"
-  - tag: template2_string
-    description: "Wrote something ore push enter for default value"
-    default: "Have a nice day"

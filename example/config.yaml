@@ -1,0 +1,17 @@
+name: example
+description: example
+steps:
+  - kind: exec
+    command: mkdir
+    args:
+      - example_dir
+  - kind: template
+    file: templates/example_txt.tpl
+    output: example/example.txt
+    values:
+      - tag: template_string
+        description: "Wrote something ore push enter for default value"
+        default: "Have a nice day"
+  - kind: exec
+    command: cat
+    args: example/example.txt
