@@ -1,0 +1,5 @@
+description: "Install the base stack, should be your first option before install others stacks"
+installers:
+  - name: macosx
+    script: install-macosx.sh
+
