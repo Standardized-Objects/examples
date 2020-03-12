@@ -2,10 +2,12 @@ name: example
 description: example
 steps:
   - kind: exec
+    description: "Step 1"
     command: mkdir
     args:
       - example_dir
   - kind: template
+    description: "Step 2"
     file: templates/example_txt.tpl
     output: example/example.txt
     values:
@@ -13,5 +15,7 @@ steps:
         description: "Wrote something ore push enter for default value"
         default: "Have a nice day"
   - kind: exec
+    description: "Step 3"
     command: cat
-    args: example/example.txt
+    args: 
+      - example/example.txt
